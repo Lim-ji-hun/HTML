@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>10_image-map</title>
+</head>
+<body>
+<!-- 
+# image map
+- 하나의 이미지에 여러개의 링크를 적용시킬 때 사용
+- img 태그
+ <img src = "" usemap=""/>
+ * usemap : 이미지에서 map을 사용할것이라고 부라우저에게 알림
+ 
+ map태그
+ <map name=""></map>
+ * name = map태그에 붙이는 이름
+ 
+ area 태그
+ - 이미지 안에 링크 활성화 지역의 크기 설정
+ <area shape="" coords="" title="" herf=""/>
+ * shape : 영역의 모양
+           default(이미지 전체), rect, cicle, poly
+   coords : map 좌표, shape 크기
+            rect   - x1, y1, x2, y2 : 사각형 두 꼭지점의 위치(왼쪽 위, 오른쪽 아래)
+            cicle  - x, y, radius : 원의 중심 좌표, 원의 반지름
+            poly   - x1, y1, x2, y2, ....... : 3개 이상의 좌표
+
+ -->
+    <h2>image map</h2>
+    <br/>
+    <img src="../../image/img/G20.jpg" usemap="#g20"/>
+
+	<map name="g20">
+		<area shape="rect" coords="427, 344, 490, 379" href="https://namu.wiki/w/대한민국"/>
+		<area shape="circle" coords="300, 196, 135" href="https://namu.wiki/w/G20"/>
+		<area shape="poly" coords="221, 15, 252, 51, 189, 52" href="https://namu.wiki/w/미국"/>
+	</map>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

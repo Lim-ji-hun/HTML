@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>23_audio</title>
+</head>
+<body>
+<!-- 
+# audio 태그
+- 웹페이지에서 오디오 파일을 재생할때 사용
+- <video src="" width="" height="" type""></video>
+  *src : 비디오 파일 경로 지정
+   width, height : 비디오 파일 크기 지정
+   type : 확장자에 따른 파일 type지정
+ -->
+
+ <h2>audio 태그</h2>
+ <br/>
+ <h2>기본 재생</h2>
+ <audio src="../../image/media/chicken.mp3" type="audio/mpeg" controls></audio>
+ 
+ <h2>자동 재생</h2>
+ <audio src="../../image/media/chicken.mp3" type="audio/mpeg" controls autoplay muted></audio>
+ 
+ <h3>브라우저 선택 재생</h3>
+ <audio controls autoplay>
+     <source src="../../image/media/Kalimba.ogg" type="audio/ogg"/>
+     <source src="../../image/media/Kalimba.mp3" type="audio/mp3"/>
+ </audio>
+
+</body>
+</html>

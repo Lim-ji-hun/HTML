@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>22_videa</title>
+</head>
+<body>
+<!-- 
+# video 태그
+- 웹페이지에서 영상을 재생할때 사용
+- <video src="" width="" height="" type""></video>
+  *src : 비디오 파일 경로 지정
+   width, height : 비디오 파일 크기 지정
+   type : 확장자에 따른 파일 type지정
+ -->
+ 
+ <h2>videa 태그</h2>
+ <br/>
+ <h2>기본 재생</h2>
+ <video src="../../image/media/Sample.mp4" width="400px" height="300px" type="video/mp4" controls></video>
+ 
+ <h2>자동 재생</h2>
+ <video src="../../image/media/Sample.mp4" width="400px" height="300px" type="video/mp4" controls autoplay muted="muted"></video>
+ 
+ <h3>브라우저 선택 재생</h3>
+ <video width="400px" height="300px" controls>
+     <source src="../../image/media/Sample.ogv" type="video/ogv"/>
+     <source src="../../image/media/Sample.mp4" type="video/mp4"/>
+ </video>
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>17_table-merge</title>
+</head>
+<body>
+<!-- 
+# 셀 병합
+- 테이블의 셀과 셀을 합칠 수 있음
+  > rowspan : 셀을 세로로 합칠 때 사용
+              속성값으로 병합하고 싶은 행의 수를 지정
+    colspan : 셀을 가로로 합칠 때 사용
+              속성값으로 병합하고 싶은 열의 수를 지정
+               
+-->
+
+<h2>셀 병합</h2>
+<br/>
+<table border="1" style="width: 300px; text-align: center;">
+
+<caption>&lt; 행 병합 &gt;</caption>
+
+<tr>
+<th> 1행 </th><td> 1행 1열 </td>
+</tr>
+
+<tr>
+<th rowspan="2"> 2행 </th><td> 2행 1열 </td>
+</tr>
+
+<tr>
+<td> 2행 2열 </td>
+</tr>
+
+</table>
+<br/>
+
+<table border="1" style="width:300px; text-align: center;">
+<caption>&lt; 열 병합 &gt;</caption>
+
+<tr>
+<th> 1열 </th><th colspan="2"> 2열 </th>
+</tr>
+
+<tr>
+<td> 2행 1열 </td><td> 2행 2-1열 </td><td> 2행 2-2열 </td>
+</tr>
+
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

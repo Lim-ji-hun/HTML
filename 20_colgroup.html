@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>20_colgroup</title>
+</head>
+<body>
+<!-- 
+ # colgroup 태그
+ - 표에 하나 이상의 열을 그룹으로 저장할 때 사용
+ - colgroup 태그는 caption 태그 다음에 위치
+ 
+ # col 태그
+ - table 태그 안에 열의 속성을 지정하는 colgroup 태그의 요소
+-->
+
+<h2>colgroup 태그</h2>
+
+<table border="1" style="width: 500px; text-align: center;">
+<caption>colgroup</caption>
+
+<colgroup>
+<col style="width:200px; background-color: silver;">
+<col span="2" style="background-color: yellow;">
+</colgroup>
+
+<tr style="height: 200px;">
+
+<td> 1행 1열 </td>
+<td> 1행 2열 </td>
+<td> 1행 3열 </td>
+
+</tr>
+
+<tr>
+
+<td> 2행 1열 </td>
+<td> 2행 2열 </td>
+<td> 2행 3열 </td>
+
+</tr>
+
+</table>
+
+</body>
+</html>
