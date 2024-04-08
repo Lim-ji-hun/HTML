@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>29_button</title>
+</head>
+<body>
+<!-- 
+	# button 태그
+	- 클릭이 가능한 버튼을 만듬
+ -->
+ 	<h2>button 태그</h2>
+ 	<br/>
+ 	<from id="login-form" action="#">
+ 		<fieldset>
+ 			<legend> 로그인 </legend>
+ 			<label for="user-id" > ID </label>
+ 			<input type="text" id="user-id" name="userId">
+ 			<br/>
+ 			<label for="user-pw" > PW </label>
+ 			<input type="password" id="user-pw" name="userPw">
+ 			<br/>
+ 			<br/>
+ 			<input type="submit" value="로그인"/> &nbsp; <input type="reset" value="취소"/>
+ 			<p>submit : from에 입력한 내용을 서버로 전송하고, <br/>
+ 			   form 태그의 action 속성에 지정한 테이지에서 실행
+ 			</p>
+ 			<p>reset : form 에 입력한 내용을 지우기</p>
+ 		</fieldset>
+ 	</from>
+ 	
+ 	<button form="login-form" type="submit"> 로그인 </button> &nbsp;
+ 	<button form="login-form" type="reset"> 취소 </button>
+ 	<p>form 과 button을 하나의 양식으로 처리할 수 있음</p>
+ 	<p>form 의 id 속성과 button 의 form 속성값이 같아야 함</p>
+</body>
+</html>
+
+
+
+
+
+
+

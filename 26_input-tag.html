@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>26_input-tag</title>
+</head>
+<body>
+<!-- 
+	# input 태그
+	- form태그 안에서 사용되는 가장 중요한 요소로 사용자로부터 데이터를 입력받기 위해 사용
+	- <input type="" name=" value="">
+	  * type  : 입력 태그의 유형 지정
+	    name  : 서버로 전달되는 이름 지정(사용자 임의 지정)
+	    value : 입력 태그의 초기값을 설정(사용자 변경 가능)
+	
+	# label 태그
+	- input 태그의 text label을 지정
+	- for 속성을 사용해서 관련 요소들을 묶는 역할을 함
+	  이때, 관련 요소들의 id 속성과 동일해야 함
+	
+ -->
+	<h2>input 태그</h2>
+	<br/>
+	<form action="#">
+		<fieldset>
+			<legend>text</legend>
+			<legend for="username">이름</legend>
+			<input type="text" name="username" id="username" size="10" maxlength="10"/>
+			<p> 한줄짜리 텍스트 입력 창임 </p>
+			<p> size : 입력창의 크기 조정, mexlength : 사용자가 입력할수있는 최대 글자수 </p>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend> password </legend>
+			<label for ="userpw"> 비밀번호 </label>
+			<input typr="password" name="userPw" id="USERpw"/>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend> file </legend>
+			<input type="file" name="fileDown" id="filedown"/>
+			<p>파일 선택 버튼 제공</p>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend> checkbox </legend>
+			<input type="checkbox" id="apple" name="fruit_1" value="사과" checked/>
+			<label for ="apple"> 사과 </label>
+			
+			<input type="checkbox" id="banana" name="fruit_2" value="바나나"/>
+			<label for ="banana"> 바나나 </label>
+			
+			<input type="checkbox" id="mango" name="fruit_3" value="망고"/>
+			<label for ="mango"> 망고 </label>
+			<p>여러 항목을 택할 수 있음</p>
+			<p>checked 속성을 사용해서 기본 선택값을 설정할 수 있음</p>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend> radio </legend>
+			<input type="radio" id="male" name="gender" value="m"/>
+			<label for ="male"> 남성 </label>
+			<input type="radio" id="female" name="gender" value="f"/>
+			<label for ="female"> 여성 </label>
+			<p>radio는 하나의 그룹이고, 한 그룹에서 radio 하나만 선택이 가능</p>
+			<p>같은 그룹에 있는 항목들은 name이 같아야함 </p>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend> hidden </legend>
+			<input type="hidden" id="hidden" name="secret" value="비밀"/>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend> button </legend>
+			<label for ="user_btn"> 버튼 </label>
+			<input type="butten" id="user_btn" name="userBtn" value="click" />
+			<p>value 속성을 사용해서 button 이름을 설정함</p>
+			<p>자체 별도의 기능은 없고, script 에 연결해서 사용함</p>
+		</fieldset>
+		
+		<br>
+
+		<input type="submit" value="전송"/>
+		
+	</form>
+
+</body>
+</html>

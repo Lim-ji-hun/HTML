@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>33_quiz_form</title>
+</head>
+<body>
+<!-- 
+	# img 폴더안의 주문정보.png 파일의 내용을 구현하시오
+ -->
+	<h2>주문 정보</h2>
+	<form action="#">
+		<label for="user-name"> 고객명 : </label>
+		<input type="text" id="user-name" name="userName" autofocus/>
+		<br/><br/>
+		<label for="user-tel"> 전화번호(필수) :  </label>
+		<input type="tel" id="user-tel" name="userTel" required/>
+		<br/><br/>
+		<label for="user-email"> 이메일 : </label>
+		<input type="email" id="user-email" name="userEmail"/>
+		<br/><br/>
+		<label for="pizza" > 피자선택(필수) : </label>
+		<select id="pizza" name="pizza" required>
+			<option value="">----- 선 택 -----</option>
+			<option value="combination">컴비네이션 피자</option>
+			<option value="cheese">치즈 피자</option>
+		</select>
+		<fieldset>
+			<legend> 피자 사이즈(필수) </legend>
+			<input type="radio" id="Small" name="pizza" value="s"/>
+			<label for ="Small"> Small </label>
+			<input type="radio" id="Medium" name="pizza" value="m"  checked/>
+			<label for ="Medium"> Medium </label>
+			<input type="radio" id="Large" name="pizza" value="l"/>
+			<label for ="Large"> Large </label>
+		</fieldset>
+		
+		<fieldset>
+		
+			<legend> 토핑 선택 </legend>
+			<input type="checkbox" id="bacon" name="toping_1" value="베이컨"/>
+			<label for ="bacon"> 베이컨 </label>
+			
+			<input type="checkbox" id="cheese" name="toping_2" value="치즈"/>
+			<label for ="cheese"> 치즈 </label>
+			
+			<input type="checkbox" id="onion" name="toping_3" value="양파"/>
+			<label for ="onion"> 양파 </label>
+			
+			<input type="checkbox" id="mushroom" name="toping_4" value="버섯"/>
+			<label for ="mushroom"> 버섯 </label>
+
+		</fieldset>
+		
+		<br/>
+
+		<label for="my-time"> 배송 희망 시간 </label>
+		<input type="time" id="my-time" name="myTime"/>
+		
+		<br/><br/>
+		
+		<label for="hope">배송시 요청 사항 : 
+		<textarea id="hope" name="hope" rows="2" cols="15">
+		</textarea>
+		</label>
+		
+		<br/><br/>
+		
+		<input type="submit" value="주문하기"/>
+		
+	</form>
+</body>
+</html>
+
+
+
+
+
+

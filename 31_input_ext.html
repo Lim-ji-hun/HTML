@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>31_input_ext</title>
+</head>
+<body>
+
+	<h2>추가 input type</h2>
+	<br/>
+	<from action="#">
+		<fieldset>
+			<legend> color </legend>
+			<label for="my-color">색상 선택</label>
+			<input type="color" id="my-color" name="myColor"/>
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend> date </legend>
+			<label for="my-date">날짜 선택(년월일)</label>
+			<input type="date" id="my-date" name="myDate"/>
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend> month </legend>
+			<label for="my-month">월 선택(년월)</label>
+			<input type="month" id="my-month" name="myMonth"/>
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend> time </legend>
+			<label for="my-time"> 시간 설정 </label>
+			<input type="time" id="my-time" name="myTime"/>
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend> range </legend>
+			<label for="point"> 값 선택 </label>
+			<input type="range" id="point" name="point" min="0" max="100" step="10" value="0"/>
+			<pre>
+			슬라이더를 사용해서 값을 선택
+			min, max : 범위 지정
+			step     : 숫자 간격 설정
+			value    : 초기값 설정
+			</pre>
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend> number </legend>
+			<label for="count"> 수랼 선택 </label>
+			<input type="number" id="count" name="point" min="0" max="10" step="2" value="0"/>
+		</fieldset>
+
+	</from>
+
+	
+</body>
+</html>

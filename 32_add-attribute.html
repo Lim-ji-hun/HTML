@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>32_add-attribute</title>
+</head>
+<body>
+<!-- 
+	# autofocus
+	- 페이지를 불러오자 마자 입력 필드 안에 마우스 커서를 위치 시킴
+	
+	# required
+	- 필수 입력 필드를 체크
+ -->
+ 	<h2>정보 입력</h2>
+ 	<br/>
+ 	<form action="#">
+		<fieldset>
+			<legend> 회원 정보 </legend>
+			<label for="user-name"> 이름 </label>
+			<input type="text" id="user-name" name="userName" placeholder="공백없이 입력하세요" autofocus required/>
+			<br/><br/>
+			<label for="user-email"> 이메일</label>
+			<input type="email" id="user-email" name="userEmail" placeholder="test@abc.com"/>
+			<br/><br/>
+			<label for="user-tel"> 전화번호 </label>
+			<input type="tel" id="user-tel" name="userTel" placeholder="010-0000-0000" pattern="^[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}$"/>
+			<br/><br/>
+			<input type="submit" value="완료"/>
+		</fieldset>
+ 		
+ 	</from>
+ 	<br/>
+ 	
+ 	<h2>온도 조절</h2>
+ 	<br/>
+ 	<form action="#">
+ 		<p>지속 시간(0.0 ~ 10.0 시간) : <input type="number" id="duration" name="duration" min="0" max="10.0" step="0.5"/></p>
+ 		<br/>
+ 		<p>온도 설정 : 10&deg; <input list="temperature" type="range" id="temp-list" name="tempSet" min="10" max="30"/> 30&deg; </p>
+ 		<datalist id="temperature">
+ 			<option value="15" label="low">
+ 			<option value="20" label="medium">
+ 			<option value="25" label="high">
+ 		</datalist>
+ 		<br/>
+ 		<input type="submit" value="설정">
+ 		
+ 	
+ 	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

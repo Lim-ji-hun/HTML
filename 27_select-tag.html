@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>27_select-tag</title>
+</head>
+<body>
+<!-- 
+	# select 태그
+	- 드롭다운을 사용해서 여러개의 항목을 정의
+	- 서버에 전송되는 데이터는 select 요소의 name 속성에, 
+	  option 요소의 value 속성이 값으로 설정됨
+	  
+	# option 태그
+	- select 태그안의 목록을 생성함
+	
+	# optgroup 태그
+	- option 태그를 그룹화 함
+	
+	# datalist 태그
+	- 텍스트를 입력하는 필드에 사전에 정의된 드롭 다운 형식의 목록을 출력
+	- 사용자가 입력창에 값을 입력하면, option 목록에서 일치하는 것을 찾아서 자동완성하는 기능을 제공
+	
+ -->
+	<h2>select 태그</h2>
+	<br/>
+	<from action="#">
+		<fieldset>
+			<legend> select </legend>
+			<select id="car_list" name="cars" size="3" multiple>
+				<option value="hyundai"> hyundai </option>
+				<option value="kia"> kia </option>
+				<option value="gm"> gm </option>
+				<option value="bmw"> bmw </option>
+				<option value="banz"> banz </option>
+			</select>
+			<p>size 속성을 사용하면 기본 표시되는 목록의 수를 지정할수있음</p>
+			<p>multiple 속성을 사용하면 여러개의 항목 선택이 가능함<br/>
+			   ctrl를 누른상태에서 선택 가능함
+			</p>
+		</fieldset>
+		<br/>
+		<input type="submit" value="선택 완료"/>
+		
+	</from>
+	
+	<br/>
+	
+	<from action="#">
+		<fieldset>
+			<legend> select </legend>
+			<select id="car_list" name="cars" size="3" multiple>
+				<optgroup label="국내">
+					<option value="hyundai"> hyundai </option>
+					<option value="kia"> kia </option>
+					<option value="gm"> gm </option>
+				</optgroup>
+				
+				<optgroup label="해외">
+					<option value="bmw"> bmw </option>
+					<option value="banz"> banz </option>
+					<option value="audi"> audi </option>
+				</optgroup>
+			</select>
+		</fieldset>
+		<br/>
+		<input type="submit" value="선택 완료"/>
+		
+	</from>
+	<br/>
+	
+	<h2>datalist</h2>
+	<from action="#">
+		<fieldset>
+			<legend> 과일 </legend>
+			<input list="fruit_list" id="fruits" name="fruits"/>
+			<datalist id="fruit_list">
+				<option value="apple" label="사과"/>
+				<option value="banana" label="바나나"/>
+				<option value="mango" label="망고"/>
+				<option value="watermelon" label="수박"/>
+				<option value="peach" label="복숭아"/>
+			</datalist>
+		</fieldset>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
